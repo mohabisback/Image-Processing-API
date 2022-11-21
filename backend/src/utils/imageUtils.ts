@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const imagesDir = '../backend/images';
+const imagesDir = '../backend/src/assets/images';
 const fullDir = '/full';
 const thumbsDir = '/thumbs';
 const extensions: string[] = ['.jpg', '.jpeg', '.png', '.gif'];

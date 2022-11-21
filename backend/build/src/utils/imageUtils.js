@@ -43,7 +43,7 @@ exports.createThumb = exports.checkImage = void 0;
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var sharp_1 = __importDefault(require("sharp"));
-var imagesDir = '../backend/images';
+var imagesDir = '../backend/src/assets/images';
 var fullDir = '/full';
 var thumbsDir = '/thumbs';
 var extensions = ['.jpg', '.jpeg', '.png', '.gif'];

@@ -88,9 +88,7 @@ router.route('/:img').get(function (req, res, next) { return __awaiter(void 0, v
             case 7:
                 res.status(404).send('Image not found.');
                 _a.label = 8;
-            case 8:
-                next();
-                return [2 /*return*/];
+            case 8: return [2 /*return*/];
         }
     });
 }); });

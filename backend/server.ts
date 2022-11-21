@@ -1,9 +1,9 @@
-import express from 'express';
+import express, { Router } from 'express';
 import cors from 'cors';
-import corsOptions from './options/corsOptions';
+import corsOptions from './src/options/corsOptions';
 import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
-import imgRouter from './routers/imgRouter';
+import imgRouter from './src/routers/imgRouter';
 import dotenv from 'dotenv';
 dotenv.config();
 const port = process.env.PORT || 5000;
@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 
 //Routers
 app.use('/api/images', imgRouter);
-app.use('*', (req, res) => {
+app.use('*', (req: express.Request, res: express.Response): void => {
   res.status(404).json({ error: 'Page not found...' });
 });
 

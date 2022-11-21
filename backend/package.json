@@ -27,10 +27,10 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "start": "node build/index.js",
+    "start": "node build/server.js",
     "dev": "nodemon -e ts  --exec \"npm run build && npm run start\"",
     "lint": "eslint -c ./config/.eslintrc.js --ignore-path ./config/.eslintignore . --ext .ts,.tsx,.js",
-    "prettier": "prettier --config ./config/.prettierrc.js --ignore-path ./config/.prettierignore **/*.ts **/*.js --write",
+    "prettier": "prettier --config ./config/.prettierrc.js --ignore-path ./config/.prettierignore . --write",
     "test": "jasmine"
   },
   "keywords": [],
